@@ -117,7 +117,7 @@
   <ItemGroup>
     <Content Include="Assets\BestChoiceLogo.png" />
     <Content Include="NeoFiles\modelFinal1.svg" />
-    <Content Include="NeoFiles\Readme.txt" />
+    <Content Include="Readme.txt" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

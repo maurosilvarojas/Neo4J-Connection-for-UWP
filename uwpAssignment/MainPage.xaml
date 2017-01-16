@@ -1,0 +1,52 @@
+﻿<Page
+    x:Class="uwpAssignment.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:uwpAssignment"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <RelativePanel Margin="10,21,-137,25">
+            <Button x:Name="checkSimilarity" Content="Accept" HorizontalAlignment="Left" Margin="797,531,0,0" VerticalAlignment="Top" Click="checkSimilarity_Click"/>
+            <TextBlock x:Name="similarityText" HorizontalAlignment="Left" Margin="797,484,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+            <TextBox x:Name="custATextBox" HorizontalAlignment="Left" Margin="755,419,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" PlaceholderText="CustA"/>
+            <TextBox x:Name="custBTextBox" HorizontalAlignment="Left" Margin="853,419,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" TextChanged="textBox1_TextChanged" PlaceholderText="CustB"/>
+            <Image x:Name="image" HorizontalAlignment="Left" Height="100" Margin="884,0,0,0" VerticalAlignment="Top" Width="100" Source="https://cdn3.iconfinder.com/data/icons/rcons-user-action/32/boy-512.png" RenderTransformOrigin="0.482,0.559"/>
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="884,115,0,0" TextWrapping="Wrap" Text="User:" VerticalAlignment="Top"/>
+            <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="929,115,-126.2,0" TextWrapping="Wrap" Text="New" VerticalAlignment="Top" Height="20" Width="222"/>
+            <Button x:Name="button" Content="Search" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="567,115,0,0" Height="32"/>
+            <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="296,115,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="228" PlaceholderText="Find your Shoes"/>
+            <Image x:Name="image1" HorizontalAlignment="Left" Height="89.728" Margin="35.957,4.909,0,0" VerticalAlignment="Top" Width="812.023" Source="Assets/BestChoiceLogo.png" Stretch="UniformToFill" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                <Image.RenderTransform>
+                    <CompositeTransform SkewY="-0.171" TranslateY="-0.474"/>
+                </Image.RenderTransform>
+            </Image>
+            <Grid HorizontalAlignment="Left" Height="185" VerticalAlignment="Top" Width="663" Margin="10,165,0,0"  Background="LightGray">
+                <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Location:" VerticalAlignment="Top"/>
+                <Button x:Name="locationButton" Content="Find.." HorizontalAlignment="Left" Margin="68,143,0,0" VerticalAlignment="Top" Click="locationButton_Click"/>
+                <ListView x:Name="locationList" HorizontalAlignment="Left" Height="100" Margin="33,25,0,0" VerticalAlignment="Top" Width="100"/>
+                <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="157,0,0,0" TextWrapping="Wrap" Text="Age:" VerticalAlignment="Top"/>
+                <ListView x:Name="ageListView" HorizontalAlignment="Left" Height="100" Margin="185,25,0,0" VerticalAlignment="Top" Width="100"/>
+                <Button x:Name="ageButton" Content="Find.." HorizontalAlignment="Left" Margin="220,144,0,0" VerticalAlignment="Top"/>
+                <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="329,4,0,0" TextWrapping="Wrap" Text="Male:" VerticalAlignment="Top"/>
+                <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="488,4,0,0" TextWrapping="Wrap" Text="Female:" VerticalAlignment="Top"/>
+                <ListView x:Name="maleListView" HorizontalAlignment="Left" Height="100" Margin="329,29,0,0" VerticalAlignment="Top" Width="100"/>
+                <ListView x:Name="femaleListView" HorizontalAlignment="Left" Height="100" Margin="488,29,0,0" VerticalAlignment="Top" Width="100"/>
+                <Button x:Name="maleButton" Content="Find.." HorizontalAlignment="Left" Margin="364,143,0,0" VerticalAlignment="Top"/>
+                <Button x:Name="femaleButton" Content="Find.." HorizontalAlignment="Left" Margin="550,144,0,0" VerticalAlignment="Top"/>
+            </Grid>
+            <Grid HorizontalAlignment="Left" Height="100" Margin="0,419,0,0" VerticalAlignment="Top" Width="690" Background="LightGray">
+                <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" Margin="43,23,0,0" TextWrapping="Wrap" Text="Collaborative Filtering" VerticalAlignment="Top" SelectionChanged="textBlock6_SelectionChanged"/>
+                <ListView x:Name="collaborativeListView" HorizontalAlignment="Left" Height="90" Margin="212,10,0,0" VerticalAlignment="Top" Width="161"/>
+                <Button x:Name="collaborativeButton" Content="Find.." HorizontalAlignment="Left" Margin="65,58,0,0" VerticalAlignment="Top"/>
+            </Grid>
+            <Grid HorizontalAlignment="Left" Height="230" Margin="768,165,0,0" VerticalAlignment="Top" Width="201" Background="LightGray"/>
+
+
+        </RelativePanel>
+
+
+    </Grid>
+</Page>

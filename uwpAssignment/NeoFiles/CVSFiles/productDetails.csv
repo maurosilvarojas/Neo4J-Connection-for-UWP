@@ -1,0 +1,159 @@
+ProductID,Category,SubCategory,HeelHeight,Insole,Closure,Gender,Material,ToeStyle
+1,Shoes,Oxfords,,Leather,Lace up,Men,Leather,Capped Toe;Round Toe
+2,Shoes,Oxfords,,Leather,Lace up,Men,Leather,Capped Toe;Round Toe
+3,Shoes,Oxfords,,Leather;Padded;Removable,Lace up,Men,Leather,Capped Toe;Round Toe
+4,Shoes,Oxfords,,Leather;Padded;Removable,Lace up,Men,Leather,Capped Toe;Round Toe
+5,Boots,Mid-Calf,1in - 1 3/4in,Leather;Padded,Pull-on,Men,Leather;Rubber,Square Toe;Closed Toe
+6,Sandals,Heel,1in - 1 3/4in,Leather;Moisture Wicking,Buckle;Ankle Strap;Hook and Loop,Women,Leather;Nappa,Round Toe
+7,Sandals,Heel,1in - 1 3/4in,Leather;Moisture Wicking,Buckle;Ankle Strap;Hook and Loop,Women,Leather,Round Toe
+8,Sandals,Heel,1in - 1 3/4in,Leather;Moisture Wicking,Buckle;Ankle Strap;Hook and Loop,Women,Leather;Nappa,Round Toe
+9,Sandals,Heel,1in - 1 3/4in,Leather;Moisture Wicking,Buckle;Ankle Strap;Hook and Loop,Women,Leather,Round Toe
+10,Boots,Mid-Calf,1in - 1 3/4in,Leather;Padded,Pull-on,Men,Leather;Neoprene,Square Toe
+11,Boots,Mid-Calf,1in - 1 3/4in,Leather;Padded,Pull-on,Men,Leather;Neoprene,Square Toe
+12,Boots,Ankle,,Leather,Pull-on,Men,Leather;Neoprene;Rubber;Suede,Round Toe;Square Toe
+13,Boots,Ankle,,Leather,Pull-on,Men,Leather;Neoprene;Rubber;Suede,Round Toe;Square Toe
+14,Boots,Ankle,1in - 1 3/4in,,Pull-on,Women,Leather,Round Toe
+15,Boots,Ankle,1in - 1 3/4in,,Pull-on,Women,Leather,Round Toe
+16,Boots,Mid-Calf,1in - 1 3/4in,Leather;Poron,Pull-on,Women,Leather;Neoprene;Rubber;Suede,Square Toe
+17,Boots,Mid-Calf,1in - 1 3/4in,Leather;Poron,Pull-on,Women,Leather;Neoprene;Rubber;Suede,Square Toe
+18,Boots,Mid-Calf,1in - 1 3/4in,Leather;Poron,Pull-on,Women,Leather;Neoprene;Rubber;Suede,Square Toe
+19,Boots,Mid-Calf,1in - 1 3/4in,Leather;Poron,Pull-on,Women,Leather;Neoprene;Rubber;Suede,Square Toe
+20,Boots,Ankle,1in - 1 3/4in,Leather;Padded,Zipper,Women,Leather,
+21,Boots,Mid-Calf,2in - 2 3/4in,Leather;Padded,Pull-on,Women,Leather;Rubber,Snub Toe;Square Toe;Closed Toe
+22,Boots,Mid-Calf,2in - 2 3/4in,Leather;Padded,Pull-on,Women,Leather;Rubber,Snub Toe;Square Toe;Closed Toe
+23,Boots,Mid-Calf,2in - 2 3/4in,Leather;Padded,Pull-on,Women,Leather;Rubber,Snub Toe;Square Toe;Closed Toe
+24,Boots,Mid-Calf,2in - 2 3/4in,Leather;Padded,,Women,Leather;Rubber,
+25,Boots,Mid-Calf,2in - 2 3/4in,Leather;Padded,Pull-on,Women,Leather;Rubber,Snub Toe;Square Toe;Closed Toe
+26,Boots,Mid-Calf,2in - 2 3/4in,Leather;Padded,Pull-on,Women,Leather;Rubber,Snub Toe;Square Toe;Closed Toe
+27,Boots,Mid-Calf,2in - 2 3/4in,Leather;Padded,Pull-on,Women,Leather;Rubber,Snub Toe;Square Toe;Closed Toe
+28,Boots,Mid-Calf,2in - 2 3/4in,Leather;Padded,Pull-on,Women,Leather;Rubber,Snub Toe;Square Toe;Closed Toe
+29,Boots,Mid-Calf,2in - 2 3/4in,Leather;Padded,Pull-on,Women,Leather;Rubber,Snub Toe;Square Toe;Closed Toe
+30,Boots,Ankle,1in - 1 3/4in,Leather,Pull-on,Women,Leather;Neoprene;Rubber;Suede,Round Toe;Square Toe
+31,Shoes,Oxfords,,EVA;Removable,Hook and Loop,Men,Leather,Moc Toe
+32,Shoes,Oxfords,,EVA;Removable,Hook and Loop,Men,Leather,Moc Toe
+33,Shoes,Oxfords,,EVA;Removable,Hook and Loop,Men,Leather,Moc Toe
+34,Slippers,Boot,,Leather,Slip-On,Women,Leather,
+35,Shoes,Loafers,,Padded,Slip-On,Men,Leather,Moc Toe
+36,Slippers,Slipper Flats,Under 1in,Padded,Slip-On;Zipper,Women,Leather,
+37,Shoes,Loafers,,Padded,Slip-On,Women,Leather;Suede,Moc Toe;Round Toe;Closed Toe
+38,Shoes,Loafers,,Padded,Slip-On,Women,Leather;Suede,Moc Toe;Round Toe;Closed Toe
+39,Shoes,Loafers,,Padded,Slip-On,Women,Leather;Suede,Moc Toe;Round Toe;Closed Toe
+40,Shoes,Loafers,,Padded,Slip-On,Women,Leather;Suede,Moc Toe;Round Toe;Closed Toe
+41,Shoes,Loafers,,Padded,Slip-On,Women,Leather;Suede,Moc Toe;Round Toe;Closed Toe
+42,Shoes,Loafers,,Padded,Slip-On,Women,Leather;Suede,Moc Toe;Round Toe;Closed Toe
+43,Boots,Ankle,,Padded,Lace up;Pull-on,Women,Suede,Round Toe
+44,Boots,Ankle,,Padded,Lace up;Pull-on,Women,Suede,Round Toe
+45,Boots,Ankle,,Padded,Lace up;Pull-on,Women,Suede,Round Toe
+46,Boots,Ankle,,Padded,Zipper,Men,Leather,Bicycle Toe
+47,Shoes,Oxfords,,,Lace up,Men,,
+48,Shoes,Oxfords,,,Lace up,Men,,Round Toe
+49,Shoes,Boat Shoes,,,Slip-On,Women,Canvas,Round Toe
+50,Shoes,Boat Shoes,,,Slip-On,Women,Canvas,Round Toe
+51,Shoes,Oxfords,1in - 1 3/4in,Padded,Lace up,Men,Leather,Capped Toe
+52,Shoes,Oxfords,1in - 1 3/4in,Leather;Padded,,Men,Leather,Capped Toe
+53,Shoes,Oxfords,1in - 1 3/4in,Leather;Padded,,Men,Leather,Capped Toe
+54,Shoes,Oxfords,1in - 1 3/4in,Leather;Padded,,Men,Leather,Capped Toe
+55,Shoes,Oxfords,1in - 1 3/4in,Padded,Lace up,Men,Leather,Capped Toe
+56,Shoes,Oxfords,1in - 1 3/4in,Padded,Lace up,Men,Leather,Capped Toe
+57,Shoes,Oxfords,1in - 1 3/4in,Padded,Lace up,Men,Leather,Capped Toe
+58,Shoes,Oxfords,1in - 1 3/4in,Padded,Lace up,Men,Leather,Capped Toe
+59,Shoes,Oxfords,1in - 1 3/4in,Leather;Padded,,Men,Leather,Capped Toe
+60,Boots,Ankle,,Padded,Lace up,Men,Leather,Capped Toe
+61,Boots,Ankle,,Padded,Lace up,Men,Leather,Capped Toe
+62,Shoes,Oxfords,,Padded,Lace up,Men,Leather,Wingtip
+63,Sandals,Flat,Under 1in,Leather;Padded;Textile,Slip-On,Women,Leather;Suede,Open Toe
+64,Sandals,Flat,Under 1in,Leather;Padded;Textile,Slip-On,Women,Leather;Suede,Open Toe
+65,Sandals,Flat,Under 1in,Leather;Padded;Textile,Slip-On,Women,Leather;Suede,Open Toe
+66,Sandals,Flat,Under 1in,Moisture Wicking;Padded,Buckle;Hook and Loop,Women,Leather,Open Toe
+67,Sandals,Flat,Under 1in,Moisture Wicking;Padded,Buckle;Hook and Loop,Women,Leather,Open Toe
+68,Sandals,Flat,Under 1in,Moisture Wicking;Padded,Buckle;Hook and Loop,Women,Leather,Open Toe
+69,Shoes,Oxfords,,Padded,Lace up,Men,Leather;Ostrich,Wingtip
+70,Shoes,Oxfords,,Leather;Padded,Lace up,Boys,,
+71,Shoes,Oxfords,,Leather;Padded,Lace up,Boys,,
+72,Shoes,Clogs and Mules,Under 1in,Orthotic Friendly;Padded;Removable,Slip-On,Women,Polyurethane,
+73,Shoes,Clogs and Mules,Under 1in,Orthotic Friendly;Padded;Removable,Slip-On,Women,Polyurethane,
+74,Shoes,Clogs and Mules,Under 1in,Orthotic Friendly;Padded;Removable,Slip-On,Women,Polyurethane,
+75,Shoes,Flats,,,,Women,,
+76,Shoes,Sneakers and Athletic Shoes,,EVA;Padded,Lace up,Men;Women,Canvas,
+77,Shoes,Sneakers and Athletic Shoes,,EVA;Padded,Lace up,Men;Women,Canvas,
+78,Shoes,Sneakers and Athletic Shoes,,EVA;Padded,Lace up,Men;Women,Canvas,
+79,Shoes,Sneakers and Athletic Shoes,,EVA,Lace up,Men;Women,Canvas;Leather;Suede,
+80,Shoes,Sneakers and Athletic Shoes,,EVA;Padded,Lace up,Men;Women,Canvas,
+81,Shoes,Sneakers and Athletic Shoes,,EVA;Padded,Lace up,Men;Women,Canvas,
+82,Shoes,Sneakers and Athletic Shoes,,EVA;Padded,Lace up,Men;Women,Canvas,
+83,Shoes,Sneakers and Athletic Shoes,,EVA;Padded,Lace up,Men;Women,Canvas;Cotton;Leather;Rubber;Suede,
+84,Shoes,Sneakers and Athletic Shoes,,EVA;Padded,Lace up,Men;Women,Canvas;Cotton;Leather;Rubber;Suede,
+85,Shoes,Sneakers and Athletic Shoes,,EVA;Padded,Lace up,Men;Women,Canvas;Cotton;Leather;Rubber;Suede,
+86,Shoes,Sneakers and Athletic Shoes,,EVA;Padded,Lace up,Men;Women,Canvas;Cotton;Leather;Rubber;Suede,
+87,Shoes,Oxfords,,Leather;Moisture Wicking;Padded;Removable,Lace up,Men,Leather,Moc Toe;Round Toe;Closed Toe
+88,Shoes,Oxfords,,Leather;Moisture Wicking;Padded;Removable,Lace up,Men,Leather,Round Toe;Closed Toe
+89,Shoes,Oxfords,Flat,Moisture Wicking;Removable,Lace up,Men,Leather;Nubuck,Moc Toe;Round Toe;Closed Toe
+90,Boots,Ankle,,Removable,Lace up,Men,Leather,Round Toe
+91,Shoes,Loafers,,Leather,Slip-On,Men,Leather,Moc Toe;Round Toe
+92,Shoes,Loafers,,,,Men,,
+93,Shoes,Loafers,,Leather,Slip-On,Men,Leather,Moc Toe;Round Toe
+94,Shoes,Loafers,,,,Men,,
+95,Shoes,Loafers,,,,Men,,
+96,Shoes,Loafers,,Leather,Slip-On,Men,Leather,Moc Toe;Round Toe
+97,Shoes,Loafers,,Leather,Slip-On,Men,Leather;Sheepskin,Moc Toe;Round Toe
+98,Shoes,Loafers,,Leather,Slip-On,Men,Leather;Sheepskin,Moc Toe;Round Toe
+99,Boots,Ankle,Flat,Leather,Zipper,Men,Leather;Rubber,
+100,Shoes,Loafers,,Leather,Slip-On,Men,Leather,Round Toe;Wingtip
+101,Shoes,Loafers,,Leather,Slip-On,Men,Leather,Round Toe;Wingtip
+102,Shoes,Oxfords,1in - 1 3/4in,Leather;Padded;Removable,Lace up,Men,Leather,Capped Toe;Round Toe
+103,Shoes,Oxfords,,Leather;Padded;Removable,Lace up,Men,Hair Calf;Leather,Capped Toe;Wingtip
+104,Shoes,Oxfords,1in - 1 3/4in,Leather;Padded;Removable,Lace up,Men,Leather,Round Toe
+105,Shoes,Oxfords,1in - 1 3/4in,Leather;Padded;Removable,Lace up,Men,Leather,Round Toe
+106,Shoes,Loafers,,Leather,Slip-On,Men,Leather,Moc Toe;Round Toe
+107,Shoes,Loafers,,Leather,Elastic Gore,Men,Leather,Moc Toe
+108,Shoes,Loafers,,Leather,Elastic Gore,Men,Leather,Moc Toe
+109,Shoes,Loafers,,Leather,Elastic Gore,Men,Leather,Moc Toe
+110,Shoes,Loafers,,Padded,Slip-On,Men,Full-grain leather,Moc Toe;Closed Toe
+111,Shoes,Loafers,,Padded,Slip-On,Men,Full-grain leather,Moc Toe;Closed Toe
+112,Shoes,Loafers,,Padded,Slip-On,Men,Full-grain leather,Moc Toe;Closed Toe
+113,Shoes,Boat Shoes,,Leather,Lace up,Men,Full-grain leather;Leather;Nubuck,Moc Toe
+114,Shoes,Boat Shoes,,Leather,Lace up,Men,Full-grain leather;Leather;Nubuck,Moc Toe
+115,Shoes,Boat Shoes,,,Lace up,Men,Leather,Moc Toe
+116,Shoes,Boat Shoes,,,Lace up,Men,,Moc Toe;Round Toe;Closed Toe
+117,Shoes,Boat Shoes,,Padded,,Men,Leather,Moc Toe
+118,Shoes,Boat Shoes,,EVA,Lace up,Women,Leather;Nubuck,Moc Toe
+119,Shoes,Boat Shoes,,Leather,Lace up,Women,Leather,Moc Toe
+120,Shoes,Sneakers and Athletic Shoes,,Orthotic Friendly;Removable,Lace up,Men,Leather;Nubuck,
+121,Shoes,Sneakers and Athletic Shoes,,Orthotic Friendly;Removable,Lace up,Men,Leather;Nubuck,
+122,Shoes,Sneakers and Athletic Shoes,,Orthotic Friendly;Removable,Lace up,Men,Leather;Nubuck,
+123,Boots,Ankle,,,Lace up,Men,Leather,Round Toe
+124,Shoes,Sneakers and Athletic Shoes,,EVA;Orthotic Friendly;Removable,Hook and Loop,Men,Full-grain leather;Leather,Moc Toe;Round Toe
+125,Shoes,Oxfords,,Removable,Lace up,Men,Leather,Round Toe
+126,Shoes,Oxfords,,Removable,Lace up,Men,Leather,Round Toe
+127,Sandals,Flat,,Leather;Padded,Hook and Loop,Men,Leather,
+128,Sandals,Flat,,Leather;Padded,Hook and Loop,Men,Leather,
+129,Shoes,Sneakers and Athletic Shoes,,Orthotic Friendly;Removable,Lace up,Women,Leather;Nubuck,
+130,Shoes,Sneakers and Athletic Shoes,,Orthotic Friendly;Removable,Lace up,Women,Leather;Nubuck,
+131,Shoes,Sneakers and Athletic Shoes,,Orthotic Friendly;Removable,Lace up,Women,Leather,Moc Toe;Round Toe
+132,Shoes,Sneakers and Athletic Shoes,,Orthotic Friendly;Removable,Lace up,Women,Leather,Moc Toe;Round Toe
+133,Shoes,Oxfords,,EVA;Leather;Removable,Lace up,Women,Leather,Moc Toe;Round Toe
+134,Shoes,Oxfords,,EVA;Leather;Removable,Lace up,Women,Leather,Moc Toe;Round Toe
+135,Boots,Ankle,1in - 1 3/4in,Padded,Lace up,Men;Women,Leather,Round Toe
+136,Boots,Ankle,1in - 1 3/4in,Padded,Lace up,Men;Women,Leather,Round Toe
+137,Boots,Ankle,1in - 1 3/4in,Padded,Lace up,Men;Women,Leather,Round Toe
+138,Boots,Ankle,1in - 1 3/4in,Padded,Lace up,Men;Women,Leather,Round Toe
+139,Boots,Ankle,1in - 1 3/4in,Padded,Lace up,Men;Women,Leather,Round Toe
+140,Boots,Ankle,1in - 1 3/4in,Padded,Lace up,Men;Women,Leather,Round Toe
+141,Boots,Ankle,1in - 1 3/4in,Padded,Lace up,Men;Women,Leather,Round Toe
+142,Boots,Ankle,1in - 1 3/4in,Padded,Lace up,Men;Women,Leather,Round Toe
+143,Boots,Ankle,1in - 1 3/4in,Padded,Lace up,Men;Women,Leather,Round Toe
+144,Boots,Ankle,1in - 1 3/4in,Padded,Lace up,Men;Women,Leather,Round Toe
+145,Boots,Ankle,1in - 1 3/4in,Padded,Lace up,Men;Women,Leather,Round Toe
+146,Boots,Ankle,1in - 1 3/4in,Padded,Lace up,Men;Women,Leather,Round Toe
+147,Boots,Ankle,1in - 1 3/4in,Padded,Lace up,Men;Women,Full-grain leather,
+148,Boots,Ankle,1in - 1 3/4in,Padded,Lace up,Men;Women,Leather,Round Toe;Closed Toe
+149,Shoes,Oxfords,,Padded,Lace up,Men;Women,Full-grain leather;Leather,Round Toe
+150,Shoes,Oxfords,,Padded,Lace up,Men;Women,Full-grain leather;Leather,Round Toe
+151,Shoes,Oxfords,,Padded,Lace up,Men;Women,Full-grain leather;Leather,Round Toe
+152,Shoes,Oxfords,,Padded,Lace up,Men;Women,Full-grain leather;Leather,Round Toe
+153,Boots,Ankle,,,Lace up,Men,Full-grain leather;Leather;Suede,Round Toe
+154,Sandals,Flat,,,Buckle,Women,Suede,
+155,Shoes,Clogs and Mules,,Removable;Textile,Slip-On,Men;Women,Polyurethane;Synthetic,Round Toe
+156,Slippers,Slipper Flats,,Leather,,Men,Leather,
+157,Slippers,Slipper Flats,,Leather,,Men,Leather,
+158,Slippers,Slipper Flats,,Padded,,Men,Leather,

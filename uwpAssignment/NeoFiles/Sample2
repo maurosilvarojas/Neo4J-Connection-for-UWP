@@ -1,0 +1,124 @@
+//Date: 2017-01-06 , Author:Mauricio Silva Rojas
+//The following code create the basic structure of the e-commerce dataset, 
+//updating csv files and creating nodes and realtionships accorndingly
+// Note: the files need to be copied to C:\Users\(your windows username)\Documents\Neo4j\default.graphdb\server\import
+// The random data was done using -> mock https://www.mockaroo.com/
+// All csv files will be given as zip file 
+//The text procesor used was Sublime with Cypher plugin
+//Please run each paragraph separetely in the neo4j console in order to map the csv to graph database
+
+//CUSTOMER TABLE
+LOAD CSV WITH HEADERS FROM
+'file:///c:/rating5000.csv' AS userRatings
+WITH userRatings
+MERGE (c:Customer {customerID: userRatings.customerId})
+MERGE (p:Product {productID: userRatings.productId})
+
+//LOAD RATINGS
+USING PERIODIC COMMIT
+LOAD CSV WITH HEADERS FROM 'file:///c:/rating5000.csv' AS userRatings
+MATCH (customer:Customer {customerID: userRatings.customerId})
+MATCH (product:Product {productID: userRatings.productId})
+MERGE (customer)-[r:RATES]->(product)
+ON CREATE SET r.score= userRatings.rating;
+
+//LOAD VIEWS
+USING PERIODIC COMMIT
+LOAD CSV WITH HEADERS FROM 'file:///c:/saw5000.csv' AS userRatings
+MATCH (customer:Customer {customerID: userRatings.customerId})
+MATCH (product:Product {productID: userRatings.productId})
+MERGE (customer)-[v:VIEW]->(product)
+ON CREATE SET v.timestamp= userRatings.timestamp;
+
+//LOAD BOUGHT
+USING PERIODIC COMMIT
+LOAD CSV WITH HEADERS FROM 'file:///c:/bought5000.csv' AS userRatings
+MATCH (customer:Customer {customerID: userRatings.customerId})
+MATCH (product:Product {productID: userRatings.productId})
+MERGE (customer)-[b:BOUGHT]->(product)
+ON CREATE SET b.timestamp= userRatings.timestamp;
+
+//LOAD PRODUCT DETAILS	
+USING PERIODIC COMMIT
+LOAD CSV WITH HEADERS FROM 'file:///c:/productDetails.csv' AS detailedList
+MATCH (product:Product {productID: detailedList.ProductID})
+SET product.Category= detailedList.Category,product.SubCategory= detailedList.SubCategory,product.HeelHeight= detailedList.HeelHeight,	product.Closure= detailedList.Closure,	product.Gender= detailedList.Gender,product.Material= detailedList.Material;
+
+//LOAD CUSTOMER PROFILES
+USING PERIODIC COMMIT
+LOAD CSV WITH HEADERS FROM 'file:///c:/customerProfile.csv' AS customerProfile
+MATCH (customer:Customer {customerID: customerProfile.customerId})
+SET customer.age=customerProfile.age,customer.first_name=customerProfile.first_name,customer.last_name=customerProfile.last_name,customer.email=customerProfile.email,customer.gender=customerProfile.gender,customer.credentials=customerProfile.credentials,customer.card_number=customerProfile.card_number,customer.language=customerProfile.language,customer.avatar=customerProfile.avatar,customer.username=customerProfile.username;
+
+//LOAD ACCESS FROM IP-LOCATION
+USING PERIODIC COMMIT
+LOAD CSV WITH HEADERS FROM 'file:///c:/customerProfile.csv' AS customerProfile
+MATCH (customer:Customer {customerID: customerProfile.customerId})
+MERGE (customer)-[r:ACCESS_FROM]->(ip:ipLocation)
+ON CREATE SET ip.ip_address= customerProfile.ip_address,ip.Latitud= customerProfile.Latitud,ip.Longitud= customerProfile.Longitud,ip.country= customerProfile.country,ip.city= customerProfile.city,ip.streetAddress= customerProfile.streetAddress,ip.timeZone= customerProfile.timeZone;
+
+
+
+
+//query same product rates
+MATCH (js:Customer)-[r1:RATES]-(p:Product)-[r2:RATES]-(jk:Customer)
+WHERE jk.customerID = "47" AND TOINT(r1.score)>4 and TOINT(r2.score) >4
+RETURN DISTINCT js.customerID ,p.productID
+//query same bought products
+MATCH (js:Customer)-[b1:BOUGHT]-(p:Product)-[b2:BOUGHT]-(jk:Customer)
+WHERE jk.customerID = "242" 
+RETURN COUNT(DISTINCT js.customerID) ,p.productID
+
+//SIMILAR user
+MATCH (js:Customer)-[b1:BOUGHT]-(p:Product)-[b2:BOUGHT]-(jk:Customer)
+MATCH (js:Customer)-[r1:RATES]-(s:Product)-[r2:RATES]-(jk:Customer)
+WHERE jk.customerID = "9" AND TOINT(r1.score)>4 and TOINT(r2.score) >4 
+RETURN DISTINCT js.customerID ,p.productID,r1.score,s.productID,r2.score
+//find recomended purchases from similar user 
+MATCH (js:Customer)-[b1:BOUGHT]-(p:Product)
+WHERE js.customerID = "422" 
+RETURN DISTINCT js.customerID ,p.productID
+//recomendation 1 p2.
+MATCH (js:Customer)-[b1:BOUGHT]-(p:Product)-[b2:BOUGHT]-(jk:Customer)
+MATCH (js:Customer)-[r1:RATES]-(p1:Product)-[r2:RATES]-(jk:Customer)
+MATCH (Js:Customer)-[:VIEW]-(p2)
+WHERE jk.customerID = "9" AND TOINT(r1.score)>4 and TOINT(r2.score) >4 
+RETURN DISTINCT p2.productID, count(*) as recomendation ORDER BY recomendation DESC
+
+
+
+
+//ppt
+(user)-[:PURCHASED]->(Product)<-[:PURCHASED]-()-[:PURCHASED]->(OtherProduct)
+
+//1. products by Location = Colombia 
+MATCH x=(p)<-[b:BOUGHT]-(a)-[r:ACCESS_FROM]->(point:ipLocation{country:'China'}) 
+  RETURN p.productID ,count(*) as recomendationLoc ORDER BY  recomendationLoc DESC
+//2. products by gender and age
+MATCH x=(p)<-[b:BOUGHT]-(a)
+WHERE TOINT(a.age)> 50 AND TOINT(a.age)<55
+  RETURN p.productID ,count(*) as recomendationAge ORDER BY  recomendationAge DESC
+//3. Products by gender Male
+MATCH x=(p)<-[b:BOUGHT]-(a)
+WHERE a.gender='Male' 	
+  RETURN p.productID ,count(*) as recomendationGender ORDER BY  recomendationGender DESC
+//4. Products by gender Female
+MATCH x=(p)<-[b:BOUGHT]-(a)
+WHERE a.gender='Female' 	
+  RETURN p.productID ,count(*) as recomendationGender ORDER BY  recomendationGender DESC
+//5.Collaborative Filtering 
+MATCH (x:Customer)-[b1:BOUGHT]-(p1:Product)-[b2:BOUGHT]-(y:Customer)
+MATCH (x:Customer)-[r1:RATES]-(p2:Product)-[r2:RATES]-(y:Customer)
+WHERE y.customerID = "172" AND TOINT(r1.score)>4 and TOINT(r2.score) >4 
+RETURN x.customerID ,count(*) as recomendationFilter ORDER BY  recomendationFilter  DESC
+//5.cosine Similarity
+MATCH p=(c1)-[r:SIMILARITY]-(c2) 
+WHERE r.similarity>0.75 AND c1.customerID=447
+RETURN c2 
+//6. FIND PRODUCTS OD THE SIMILAR CUSTOMER
+MATCH (x:Customer)-[b1:BOUGHT]-(p1:Product)-[b2:BOUGHT]-(y:Customer)
+MATCH (x:Customer)-[r1:RATES]-(p2:Product)-[r2:RATES]-(y:Customer)
+MATCH (x:Customer)-[b2:RATES]-(p3:Product)
+WHERE x.customerID = "312" AND y.customerID = "172" AND TOINT(r1.score)>4 and 
+		TOINT(r2.score) >4 AND NOT( p1.productID =  p2.model) 
+		RETURN p2.productID ,count(*) as recomendationGender ORDER BY  recomendationGender DESC
